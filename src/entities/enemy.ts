@@ -15,7 +15,7 @@ export class Enemy extends Phaser.Physics.Arcade.Sprite {
     this.setActive(true)
       .setVisible(true)
       .enableBody()
-      .play(ASSET_KEYS.ASTEROID, true)
+      .setTexture(ASSET_KEYS.ASTEROID)
       .setScale(Phaser.Math.FloatBetween(MIN_SCALE, MAX_SCALE));
     this.#rotationSpeed = Phaser.Math.FloatBetween(MIN_ROTATION_SPEED, MAX_ROTATION_SPEED);
     this.scene.physics.moveTo(this, targetX, targetY, speed);

@@ -1,10 +1,6 @@
 # Phaser 4 — Planet Defense
 
-![License](https://img.shields.io/badge/license-MIT-green)
-
 A small arcade game built with [Phaser 4](https://github.com/photonstorm/phaser): defend a planet from incoming asteroids by orbiting it with your ship and shooting them down before they hit.
-
-A playable demo is hosted on Itch.io: **[galemius.itch.io/phaser-4-planet-defense](https://galemius.itch.io/phaser-4-planet-defense)**.
 
 ![Gameplay Demo 1](/docs/demo1.gif?raw=true 'Gameplay Demo 1')
 ![Gameplay Demo 2](/docs/demo2.gif?raw=true 'Gameplay Demo 2')
@@ -29,8 +25,8 @@ Resolution: **640 × 450**, FIT scale mode, auto-centered.
 ## Quick start
 
 ```sh
-npm install
-npm run dev
+yarn install
+yarn dev
 ```
 
 The dev server starts at **http://localhost:5173** and hot-reloads on save.
@@ -38,8 +34,8 @@ The dev server starts at **http://localhost:5173** and hot-reloads on save.
 To build a production bundle:
 
 ```sh
-npm run build
-npm run preview   # serve the built bundle locally
+yarn build
+yarn preview   # serve the built bundle locally
 ```
 
 ---
@@ -147,18 +143,18 @@ The project follows a **layered architecture** that keeps each scene small and e
 
 ---
 
-## npm scripts
+## Scripts
 
-| Script                | What it does                                   |
-| --------------------- | ---------------------------------------------- |
-| `npm run dev`         | Start Vite dev server on port 5173 with HMR    |
-| `npm run build`       | Type-check with `tsc --noEmit`, then `vite build` to `dist/` |
-| `npm run preview`     | Serve the built `dist/` bundle locally         |
-| `npm run typecheck`   | TypeScript check only (no emit)                |
-| `npm run lint`        | Run ESLint over `src/`                         |
-| `npm run lint:fix`    | Run ESLint with auto-fix                       |
-| `npm run format`      | Format `src/` with Prettier                    |
-| `npm run format:check`| Check formatting without modifying files       |
+| Script               | What it does                                   |
+| -------------------- | ---------------------------------------------- |
+| `yarn dev`           | Start Vite dev server on port 5173 with HMR    |
+| `yarn build`         | Type-check with `tsc --noEmit`, then `vite build` to `dist/` |
+| `yarn preview`       | Serve the built `dist/` bundle locally         |
+| `yarn typecheck`     | TypeScript check only (no emit)                |
+| `yarn lint`          | Run ESLint over `src/`                         |
+| `yarn lint:fix`      | Run ESLint with auto-fix                       |
+| `yarn format`        | Format `src/` with Prettier                    |
+| `yarn format:check`  | Check formatting without modifying files       |
 
 ---
 
