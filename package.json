@@ -1,0 +1,30 @@
+{
+  "name": "phaser-4-planet-defense",
+  "version": "1.0.0",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc --noEmit && vite build",
+    "preview": "vite preview",
+    "typecheck": "tsc --noEmit",
+    "lint": "eslint src",
+    "lint:fix": "eslint src --fix",
+    "format": "prettier --write \"src/**/*.{ts,json,html,css}\" \"*.{ts,js,json,html,css}\"",
+    "format:check": "prettier --check \"src/**/*.{ts,json,html,css}\" \"*.{ts,js,json,html,css}\""
+  },
+  "dependencies": {
+    "phaser": "^4.1.0"
+  },
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "@types/node": "^22.10.0",
+    "eslint": "^10.4.1",
+    "eslint-config-prettier": "^10.1.8",
+    "globals": "^16.0.0",
+    "prettier": "^3.4.0",
+    "typescript": "^5.7.0",
+    "typescript-eslint": "^8.60.1",
+    "vite": "^8.0.5"
+  }
+}
